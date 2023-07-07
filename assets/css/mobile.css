@@ -1,0 +1,404 @@
+/* MENU */
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  .logo {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1090px) {
+  .button-select {
+    margin: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  header {
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+  #menu-select {
+    position: absolute;
+    width: 100%;
+    top: 10rem;
+    right: 0rem;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+
+    background-color: #af8703;
+    background-image: url(/assets/img/base-madri.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #nav.active #menu-select {
+    height: 40rem;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu-select a {
+    padding: 3rem 0;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  #menu-select a:hover {
+    color: var(--red-color);
+  }
+
+  #btn-mobile {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 1rem;
+  }
+
+  #icon-btn {
+    border-top: 0.2rem solid;
+    width: 2rem;
+    color: #fff;
+  }
+
+  #icon-btn::after,
+  #icon-btn::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #icon-btn {
+    border-top-color: transparent;
+  }
+
+  #nav.active #icon-btn::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #icon-btn::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  #menu-select .button-select a {
+    background-color: var(--red-color);
+    padding: 2rem 3rem;
+  }
+
+  #menu-select .button-select a:hover {
+    background-color: var(--orange-color);
+    border: 0.1rem solid #e70e18;
+  }
+
+  .button-select {
+    margin: 0;
+  }
+}
+
+@media (max-width: 508px) {
+  .logo {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 440px) {
+  header {
+    padding: 2rem;
+  }
+}
+
+/* HOME */
+
+@media (max-width: 1620px) {
+  .folha-lf {
+    right: 100rem;
+    top: 45rem;
+  }
+}
+
+@media (max-width: 1620px) {
+  .folha-lf {
+    right: 90rem;
+  }
+  .folha-bt {
+    right: 40rem;
+  }
+  .folha-tp {
+    left: 30rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .folha-lf {
+    right: 80rem;
+  }
+}
+
+@media (max-width: 1215px) {
+  .folha-lf {
+    right: 80rem;
+  }
+  .folha-bt {
+    right: 30rem;
+  }
+  .folha-tp {
+    left: 20rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .folha-lf {
+    right: 60rem;
+  }
+  .folha-bt {
+    right: 10rem;
+  }
+  .folha-tp {
+    left: 10rem;
+    top: 65rem;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 830px) {
+    .folha-lf {
+      right: 50rem;
+    }
+  }
+
+  @media (max-width: 670px) {
+    .folha-lf {
+      right: 40rem;
+      width: 8rem;
+    }
+    .folha-bt {
+        width: 8rem;
+      }
+  }
+
+  @media (max-width: 580px) {
+    .folha{
+        width: 7rem;
+      }
+
+      .folha-lf {
+        right: 30rem;
+      }
+
+      .folha-tp {
+        width: 15rem;
+        left: 4rem;
+        top: 60rem;
+      }
+  }
+
+  @media (max-width: 478px) {
+    .folha{
+        width: 5rem;
+      }
+    .folha-lf {
+        top: 50rem;
+    }
+    .folha-bt {
+        top: 57rem;
+        right: 2rem;
+      }
+
+      .folha-tp {
+        top: 65rem;
+        width: 10rem;
+      }
+  }
+
+  @media (max-width: 450px) {
+    .folha-tp {
+        top: 60rem;
+      }
+
+      .folha-lf {
+        right: 23rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .home-container {
+        padding-top: 20rem;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+      }
+
+      .home-content p {
+        font-size: 1rem;
+      }
+
+      .img-home {
+        margin-top: 5rem;
+      }
+
+      .folha-tp {
+        top: 50rem;
+      }
+
+      .folha-lf {
+        top: 38rem;
+    }
+
+    .folha-bt {
+        top: 45rem;
+      }
+  }
+
+  /* ABOUT */
+
+  @media (max-width: 1199px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-img {
+        max-width: 40rem;
+    }
+
+    .about-text {
+        max-width: 40rem;
+    }
+
+    .madri-dettails {
+        bottom: -10rem;
+    }
+  }
+
+  @media (max-width:899px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 40rem;
+        height: auto;
+    }
+
+    .madri-dettails {
+        bottom: -2rem;
+    }
+  }
+
+  @media (max-width:469px) {
+
+    .about-img {
+        width: 30rem;
+        height: auto;
+    }
+
+    .about-text {
+        width: auto;
+    }
+    
+  }
+
+  @media (max-width:565px) {
+
+    .madri-dettails {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .ext{
+    bottom: 18rem;
+    }
+  }
+
+  /* CARDÁPIO - MENU */
+
+  @media (max-width:565px) {
+
+    .price-content {
+      gap: 7rem;
+    }
+    
+  }
+
+  /* INGREDIENTS */
+
+  @media (max-width: 1067px) {
+    .ingredients {
+        gap: 4rem;
+        padding: 3rem;
+        height: auto;
+    }
+  }
+
+  @media (max-width: 570px) {
+    .ingredients {
+        gap: 4rem;
+        padding: 3rem;
+        height: auto;
+    }
+
+    .ingredients .about-img {
+        height: 30rem;
+    }
+  }
+
+  /* FOOTER */
+
+  @media  (max-width: 1500px) {
+    footer {
+        padding: 5rem;
+    }
+  }
+
+  @media  (max-width: 1085px) {
+    .footer-one {
+        gap: 2rem;
+    }
+
+    .contact-text  {
+        align-items: center;
+    }
+
+    .footer-two {
+        gap: 2rem;
+        justify-content: center;
+    }
+  }
+
+  @media  (max-width: 407px) {
+    h6 {
+        font-size: 1.5rem
+    }
+  }

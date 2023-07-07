@@ -368,6 +368,10 @@
         padding: 3rem;
         height: auto;
     }
+
+    .about-img img {
+      object-fit: contain;
+    }
   }
 
   @media (max-width: 570px) {

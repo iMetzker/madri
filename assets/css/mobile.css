@@ -244,7 +244,11 @@
        }
 
     .home-content h1 {
-      font-size: 3rem;
+      font-size: 4rem;
+    }
+
+    .home-content p {
+      font-size: 1rem;
     }
 
   }
@@ -260,29 +264,27 @@
   }
 
   @media (max-width: 375px) {
-    .home-container {
-        padding-top: 20rem;
-    }
-
-      .home-content p {
-        font-size: 1rem;
-      }
-
+    
       .img-home {
         margin-top: 5rem;
       }
 
-      .folha-tp {
-        top: 50rem;
+      .home-container {
+        padding-top: 17rem;
       }
+      
 
-      .folha-lf {
-        top: 38rem;
+    .folha-tp {
+      top: 50rem;
     }
 
-    .folha-bt {
-        top: 45rem;
-      }
+    .folha-lf {
+      top: 40rem;
+  }
+
+  .folha-bt {
+      top: 45rem;
+    }
   }
 
   /* ABOUT */

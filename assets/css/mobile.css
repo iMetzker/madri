@@ -1,5 +1,7 @@
 /* MENU */
-
+ body {
+  overflow: hidden;
+}
 #btn-mobile {
   display: none;
 }
@@ -43,6 +45,17 @@
     height: 90vh;
     visibility: visible;
     overflow-y: auto;
+    position: fixed;
+  }
+
+  #nav.active #menu-select a{
+    background-color: var(--red-color);
+    padding: 2rem;
+    border-radius: 99px;
+    border: .1rem solid var(--orange-color);
+    margin-top: 1rem;
+    width: 200px;
+    font-size: 1.3rem;
   }
 
   #menu-select a {
@@ -52,6 +65,8 @@
   }
 
   #menu-select a:hover {
+    background-color: var(--orange-color) !important;
+    border: .1rem solid var(--red-color) !important;
     color: var(--red-color);
   }
 

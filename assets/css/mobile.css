@@ -32,8 +32,7 @@
     visibility: hidden;
     overflow-y: hidden;
 
-    background-color: #af8703;
-    background-image: url(/assets/img/base-madri.png);
+    background-color: #dcb800;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +40,7 @@
   }
 
   #nav.active #menu-select {
-    height: 40rem;
+    height: 90vh;
     visibility: visible;
     overflow-y: auto;
   }
